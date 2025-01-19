@@ -1,14 +1,10 @@
-from abc import ABC, abstractmethod
-
 class PatternAnalyzer(ABC):
     """Abstract base class for pattern analyzers."""
     
     @abstractmethod
-    async def analyze(self, data):
+    async def analyze(self, data: Data) -> List[Pattern]:
         """Analyze data for patterns."""
-        pass
         
     @abstractmethod
-    async def validate_pattern(self, pattern):
+    async def validate_pattern(self, pattern: Pattern) -> bool:
         """Validate identified pattern."""
-        pass

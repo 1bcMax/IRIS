@@ -1,14 +1,10 @@
-from abc import ABC, abstractmethod
-
 class InsightGenerator(ABC):
     """Abstract base class for insight generators."""
     
     @abstractmethod
-    async def generate_insights(self, patterns):
+    async def generate_insights(self, patterns: List[Pattern]) -> List[Insight]:
         """Generate insights from patterns."""
-        pass
         
     @abstractmethod
-    async def rank_insights(self, insights):
+    async def rank_insights(self, insights: List[Insight]) -> List[Insight]:
         """Rank insights by relevance."""
-        pass
