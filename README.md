@@ -46,7 +46,7 @@ IRIS is an advanced AI-powered system that helps you understand yourself better 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/iris.git
+git clone https://github.com/1bcMax/IRIS
 cd iris
 ```
 
